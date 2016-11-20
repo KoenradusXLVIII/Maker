@@ -1,0 +1,58 @@
+Partlist
+
+Exported from RemoteIO-v10b.brd at 14-1-2015 18:30:34
+
+EAGLE Version 7.1.0 Copyright (c) 1988-2014 CadSoft
+
+Assembly variant: 
+
+Part     Value           Package        Library             Position (mm)         Orientation
+
+ARDUINO  ATMEGA328P_PDIP DIL28-3        SparkFun-DigitalIC  (43.506 46.49)        R90
+C1       0.1u            C025-024X044   rcl                 (35.266 51.244)       R270
+C3       22p             C025-024X044   rcl                 (46.188 17.2)         R180
+C4       22p             C025-024X044   rcl                 (39.566 17.25)        R0
+C5       10u             E2,5-6         rcl                 (15.978 38.588)       R270
+C6       22p             C025-024X044   rcl                 (34.518 21.546)       R90
+C7       22p             C025-024X044   rcl                 (34.658 40.966)       R90
+C8       0.1u            C025-024X044   rcl                 (9.444 22.768)        R180
+C9       0.1u            C025-024X044   rcl                 (5.114 40.768)        R180
+C10      0.1u            C025-024X044   rcl                 (16.284 22.768)       R180
+IC1      ENC28J60        DIL28-3        microchip           (25.83 28.65)         R270
+IO-1                     AK500/2        con-ptr500          (38.75 10)            R180
+IO-1_LED                 LED3MM         led                 (49.25 12)            R0
+IO-2                     AK500/2        con-ptr500          (64 16.75)            R90
+IO-2_LED                 LED3MM         led                 (64 8)                R180
+IO-3                     AK500/2        con-ptr500          (64 28.75)            R90
+IO-3_LED                 LED3MM         led                 (56 31.5)             R180
+IO-4                     AK500/2        con-ptr500          (64 41)               R90
+IO-4_LED                 LED3MM         led                 (56 36.75)            R180
+IO-5                     AK500/2        con-ptr500          (64 53)               R90
+IO-5_LED                 LED3MM         led                 (56 50.5)             R180
+J1       POWER_JACKPTH   POWER_JACK_PTH SparkFun-Connectors (-3 34)               R270
+NET_LED  Network         LED3MM         led                 (63.5 62.5)           R270
+PWR_LED  Power           LED3MM         led                 (3.35 15.35)          R180
+R1       150             0207/7         rcl                 (7.966 15.226)        R270
+R2       10k             0207/7         rcl                 (43.522 26.49)        R180
+R3       150             0207/7         rcl                 (54.556 21.32)        R0
+R4       150             0207/7         rcl                 (54.444 17.17)        R180
+R5       150             0207/7         rcl                 (54.656 25.64)        R0
+R6       150             0207/7         rcl                 (51.55 34.394)        R270
+R7       150             0207/7         rcl                 (54.606 42.31)        R0
+R8       150             0207/7         rcl                 (54.556 46.02)        R0
+R9       2.2k            0207/7         rcl                 (25.418 8.908)        R180
+R10      10k             0207/7         rcl                 (35.342 60.012)       R270
+R11      100k            0207/7         rcl                 (11.342 15.106)       R270
+R12      47              0207/7         rcl                 (18.258 30.256)       R90
+R13      47              0207/7         rcl                 (15.008 30.162)       R90
+R14      47              0207/7         rcl                 (17.992 15.432)       R270
+R15      47              0207/7         rcl                 (14.742 15.276)       R270
+R16      1k              0207/7         rcl                 (30.174 52.494)       R270
+R17      1k              0207/7         rcl                 (25.924 52.588)       R270
+R18      47              0207/7         rcl                 (21.674 52.432)       R270
+RELAIS-1                 MA03-1         con-lstb            (5.232 63.148)        R180
+RELAIS-2                 MA03-1         con-lstb            (25.732 63.236)       R180
+RJ1      HR911105A       HR911105A      Joost               (8.248 50.898)        R180
+S1                       B3F-10XX       switch-omron        (54.558 57.412)       R0
+Y1       16MHz           HC49US         SparkFun-FreqCtrl   (42.902 21.688)       R180
+Y2       25MHz           HC49US         SparkFun-FreqCtrl   (34.538 31.772)       R90
