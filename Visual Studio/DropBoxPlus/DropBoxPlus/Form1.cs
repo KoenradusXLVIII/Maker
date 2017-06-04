@@ -137,6 +137,32 @@ namespace DropBoxPlus
             t1.Enabled = true;
         }
 
+        private void butnMove_Click(object sender, EventArgs e)
+        {
+            // Disable exit procedure
+            t2.Enabled = false;
+
+            // Display the progress bar
+            this.Height += 85;
+            // Compute the amount of files to move
+            DirectoryInfo d = new DirectoryInfo(DROPBOX_SOURCE_DIR);
+            ToMoveCnt += d.GetFiles("*.jpg", SearchOption.TopDirectoryOnly).Length;
+            ToMoveCnt += d.GetFiles("*.mp4", SearchOption.TopDirectoryOnly).Length;
+            ToMoveCnt += d.GetFiles("*.png", SearchOption.TopDirectoryOnly).Length;
+
+            // Initialize progress bar
+            gFilesMoved = Graphics.FromImage(bmpFilesMoved);
+            gFilesMoved.Clear(Color.Black);
+            gFilesMoved.FillRectangle(Brushes.White, new Rectangle(2, 2, pbWidth - 4, pbHeight - 4));
+            pbFilesMoved.Image = bmpFilesMoved;
+
+            // Update label
+            lblFilesMoved.Text = "Files moved [0/" + ToMoveCnt + "]";
+
+            // Start processing
+            t1.Enabled = true;
+        }
+
         private void OnTimedEvent2(Object myObject, EventArgs myEventArgs)
         {
             t2.Enabled = false; 
@@ -191,11 +217,19 @@ namespace DropBoxPlus
         private bool CheckNAS()
         {
             Ping pingSend = new Ping();
-            PingReply pingRec = pingSend.Send(NAS_HOSTNAME);
-            if (pingRec.Status.ToString().Equals("Success"))
-                return true;
-            else
+            try
+            {
+                PingReply pingRec = pingSend.Send(NAS_HOSTNAME);
+                if (pingRec.Status.ToString().Equals("Success"))
+                    return true;
+                else
+                    return false;
+            }
+            catch (Exception)
+            {
                 return false;
+            }
+
         }
 
         private void MoveDropboxData()
@@ -224,9 +258,6 @@ namespace DropBoxPlus
 
                     // Extract the year the picture was taken in
                     int year;
-                    //if ((fi.Extension == ".jpg") || (fi.Extension == ".png"))
-                    //    year = GetYearTakenFromImage(fi.FullName, fi.Name);
-                    //else
                     year = int.Parse(fi.Name.Substring(0, 4));
                     string destFolder = NAS_DEST_DIR + "\\" + year + "\\";
 
@@ -255,28 +286,8 @@ namespace DropBoxPlus
                     // Update dropbox progress bar
                     UpdateDropboxUsage();
 
-                    // DEBUG
-                    // ToMoveCnt--;
                     return;
                 }
-            }
-        }
-
-        private static int GetYearTakenFromImage(string path, string filename)
-        {
-            using (FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read))
-            using (Image myImage = Image.FromStream(fs, false, false))
-            {
-                if (myImage.PropertyIdList.Any(p => p == 36867))
-                {   // Original creation date property exists
-                    PropertyItem propItem = myImage.GetPropertyItem(36867);
-                    string dateTaken = r.Replace(Encoding.UTF8.GetString(propItem.Value), "-", 2);
-                    return DateTime.Parse(dateTaken).Year;
-                }
-                else
-                {   // Get creation date from filename
-                    return int.Parse(filename.Substring(0, 4));
-                }   
             }
         }
 

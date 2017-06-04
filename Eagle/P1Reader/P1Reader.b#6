@@ -67,8 +67,8 @@
 <text x="5.01" y="34.73" size="1" layer="25" ratio="10" rot="SR180">VCC</text>
 <text x="10.51" y="34.73" size="1" layer="25" ratio="10" rot="SR180">GND</text>
 <text x="18.51" y="34.73" size="1" layer="25" ratio="10" rot="SR180">RxD</text>
-<text x="21.75" y="23.75" size="1.778" layer="26" ratio="10" rot="MR0">P1Reader v1.0</text>
-<text x="21.75" y="10" size="1.778" layer="26" ratio="10" rot="MR0">Joost Verberk</text>
+<text x="21.75" y="24.75" size="1.778" layer="26" ratio="10" rot="MR0">P1Reader v1.0</text>
+<text x="21.75" y="9.25" size="1.778" layer="26" ratio="10" rot="MR0">Joost Verberk</text>
 </plain>
 <libraries>
 <library name="con-ptr500">

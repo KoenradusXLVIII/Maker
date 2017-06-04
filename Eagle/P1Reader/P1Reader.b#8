@@ -1568,11 +1568,14 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R_PU" pad="2"/>
 <contactref element="R_COL" pad="2"/>
 <wire x1="21.07" y1="13.97" x2="20.1754" y2="13.97" width="0.2" layer="1"/>
-<wire x1="20.1754" y1="13.97" x2="3.7754" y2="30.37" width="0.2" layer="1"/>
-<wire x1="21.07" y1="13.97" x2="16.46" y2="13.97" width="0.2" layer="1"/>
+<wire x1="20.1754" y1="13.97" x2="16.46" y2="13.97" width="0.2" layer="1"/>
 <wire x1="16.46" y1="13.97" x2="16.43" y2="14" width="0.2" layer="1"/>
 <wire x1="16.43" y1="14" x2="16.43" y2="8.9246" width="0.2" layer="1"/>
 <wire x1="16.43" y1="8.9246" x2="20.2946" y2="5.06" width="0.2" layer="1"/>
+<wire x1="20.1754" y1="13.97" x2="20.1754" y2="15.8246" width="0.2" layer="1"/>
+<wire x1="20.1754" y1="15.8246" x2="5.75" y2="30.25" width="0.2" layer="1"/>
+<wire x1="5.75" y1="30.25" x2="3.8954" y2="30.25" width="0.2" layer="1"/>
+<wire x1="3.8954" y1="30.25" x2="3.7754" y2="30.37" width="0.2" layer="1"/>
 </signal>
 <signal name="TXD">
 <contactref element="P1_DATA" pad="2"/>

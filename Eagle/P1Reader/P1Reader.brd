@@ -1542,7 +1542,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R_COL" library="rcl" package="0207/7" value="10k" x="16.43" y="17.81" smashed="yes" rot="R270">
 <attribute name="NAME" x="13.577" y="20.6" size="1.27" layer="25" ratio="10" rot="R270"/>
 </element>
-<element name="R_PU" library="rcl" package="0207/7" value="10k" x="21.07" y="17.78" smashed="yes" rot="R270">
+<element name="R_PU" library="rcl" package="0207/7" value="1k" x="21.07" y="17.78" smashed="yes" rot="R270">
 <attribute name="NAME" x="18.217" y="20.07" size="1.27" layer="25" ratio="10" rot="R270"/>
 </element>
 </elements>

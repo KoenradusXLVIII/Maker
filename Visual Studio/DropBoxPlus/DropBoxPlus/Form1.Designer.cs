@@ -37,6 +37,7 @@
             this.lblFilesMoved = new System.Windows.Forms.Label();
             this.lblCurFileLabel = new System.Windows.Forms.Label();
             this.lblCurFile = new System.Windows.Forms.Label();
+            this.butnMove = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbDropboxUsage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFilesMoved)).BeginInit();
             this.SuspendLayout();
@@ -81,7 +82,7 @@
             // 
             // pbFilesMoved
             // 
-            this.pbFilesMoved.Location = new System.Drawing.Point(12, 114);
+            this.pbFilesMoved.Location = new System.Drawing.Point(12, 115);
             this.pbFilesMoved.Name = "pbFilesMoved";
             this.pbFilesMoved.Size = new System.Drawing.Size(260, 22);
             this.pbFilesMoved.TabIndex = 6;
@@ -91,7 +92,7 @@
             // 
             this.lblFilesMoved.AutoSize = true;
             this.lblFilesMoved.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFilesMoved.Location = new System.Drawing.Point(12, 96);
+            this.lblFilesMoved.Location = new System.Drawing.Point(12, 97);
             this.lblFilesMoved.Name = "lblFilesMoved";
             this.lblFilesMoved.Size = new System.Drawing.Size(99, 15);
             this.lblFilesMoved.TabIndex = 7;
@@ -100,7 +101,7 @@
             // lblCurFileLabel
             // 
             this.lblCurFileLabel.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCurFileLabel.Location = new System.Drawing.Point(12, 150);
+            this.lblCurFileLabel.Location = new System.Drawing.Point(12, 151);
             this.lblCurFileLabel.Name = "lblCurFileLabel";
             this.lblCurFileLabel.Size = new System.Drawing.Size(260, 15);
             this.lblCurFileLabel.TabIndex = 8;
@@ -115,11 +116,22 @@
             this.lblCurFile.Size = new System.Drawing.Size(0, 15);
             this.lblCurFile.TabIndex = 9;
             // 
+            // butnMove
+            // 
+            this.butnMove.Location = new System.Drawing.Point(197, 63);
+            this.butnMove.Name = "butnMove";
+            this.butnMove.Size = new System.Drawing.Size(75, 23);
+            this.butnMove.TabIndex = 10;
+            this.butnMove.Text = "Move";
+            this.butnMove.UseVisualStyleBackColor = true;
+            this.butnMove.Click += new System.EventHandler(this.butnMove_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 181);
+            this.Controls.Add(this.butnMove);
             this.Controls.Add(this.lblCurFile);
             this.Controls.Add(this.lblCurFileLabel);
             this.Controls.Add(this.lblFilesMoved);
@@ -150,6 +162,7 @@
         private System.Windows.Forms.Label lblFilesMoved;
         private System.Windows.Forms.Label lblCurFileLabel;
         private System.Windows.Forms.Label lblCurFile;
+        private System.Windows.Forms.Button butnMove;
     }
 }
 

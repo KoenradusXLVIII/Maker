@@ -1566,8 +1566,8 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="23" y="0.25"/>
 <vertex x="0.75" y="0.25"/>
 </polygon>
-<via x="9" y="25.5" extent="1-16" drill="0.6"/>
-<via x="18" y="25.5" extent="1-16" drill="0.6"/>
+<via x="8.75" y="25.5" extent="1-16" drill="0.6"/>
+<via x="17.25" y="25.5" extent="1-16" drill="0.6"/>
 <via x="4" y="10" extent="1-16" drill="0.6"/>
 <via x="9" y="10" extent="1-16" drill="0.6"/>
 <via x="15.25" y="10" extent="1-16" drill="0.6"/>

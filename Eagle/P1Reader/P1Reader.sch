@@ -3769,7 +3769,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="Q1" library="transistor-npn" deviceset="BC548*" device=""/>
 <part name="R_B" library="rcl" deviceset="R-EU_" device="0207/7" value="1k"/>
 <part name="R_COL" library="rcl" deviceset="R-EU_" device="0207/7" value="10k"/>
-<part name="R_PU" library="rcl" deviceset="R-EU_" device="0207/7" value="10k"/>
+<part name="R_PU" library="rcl" deviceset="R-EU_" device="0207/7" value="1k"/>
 </parts>
 <sheets>
 <sheet>

@@ -3865,11 +3865,18 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="48.26" y1="58.42" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
 <junction x="48.26" y="50.8"/>
 <label x="48.26" y="58.42" size="1.778" layer="95"/>
+<junction x="25.4" y="50.8"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,-24.059,33.02,P1_POWER,,,,,"/>
+<approved hash="113,1,-22.9343,66.04,P1_DATA,,,,,"/>
+<approved hash="113,1,66.2337,66.04,ARDUINO_POWER,,,,,"/>
+<approved hash="113,1,65.109,50.8,ARDUINO_DATA,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

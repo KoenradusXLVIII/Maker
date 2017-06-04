@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SmartHouse</string>
+    <string name="light_mode">Automatic mode garden house light</string>
+    <string name="door_gardenhouse">Door of the garden house</string>
+    <string name="water_mode">Automatic mode water sprinklers</string>
+</resources>
